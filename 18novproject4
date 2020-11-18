@@ -1,0 +1,38 @@
+package pro4;
+import java.util.*;
+
+class Employee{
+	public static String name() {
+		Scanner sc=new Scanner(System.in);
+		String n=sc.nextLine();
+		return n;
+	}
+	public static int yoj() {
+		Scanner sc=new Scanner(System.in);
+		int year=sc.nextInt();
+		return year;
+	}
+	public static String add() {
+		Scanner sc=new Scanner(System.in);
+		String add=sc.nextLine();
+		return add;
+	}
+}
+public class info {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Employee em=new Employee();
+		System.out.println("Enter Name");
+		String name=em.name();
+		System.out.println("Enter Year of joining");
+		int year=em.yoj();
+		System.out.println("Enter address");
+		String ad=em.add();
+			
+		System.out.println(name+" "+year+" "+ad);
+		
+		
+	}
+
+}
